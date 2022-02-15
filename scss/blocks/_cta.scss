@@ -1,0 +1,96 @@
+.cta {
+  background-color: #495567;
+
+  &__container {
+    @include flex-display;
+    justify-content: space-between;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    background-image: url("../../img/cta-bg2x@2x.jpg");
+    }
+
+    background-image: url(../../img/cta-bg.jpg);background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__description {
+  width: 415px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+  letter-spacing: -2px;
+  }
+
+  &__link-wrapper {
+    @include flex-display;
+    width: 360px;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: $tablet) {
+  .cta {
+    &__container {
+      @include basic-area;
+      max-width: 497px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 88px 0;
+      flex-direction: column;
+      text-align: center;
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+
+        background-image: url(../../img/tablet-bg2x.jpg);
+      }
+      background: url(../../img/tablet-bg.jpg);
+    }
+    &__link-wrapper {
+      max-width: 258px;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+    &__app-store {
+      width: 114px;
+      height: 38px;
+    }
+    &__google-play {
+      width: 128px;
+      height: 40px;
+    }
+  }
+}
+@media only screen and (max-width: $mobile) {
+  .cta {
+    &__container {
+      @include basic-area;
+      margin: 0 auto;
+      padding: 88px 0;
+      max-width: 351px;
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+
+        background-image: url(../../img/mobile-bg2x.jpg);
+      }
+      background: url(../../img/mobile-bg.jpg);
+    }
+    &__description {
+      @include font($space-mono,30px, 700px, 30px)
+    }
+    }
+  }
