@@ -1,5 +1,7 @@
 
 .our-values {
+  margin-top: 78px;
+  
   &__title {
     @include basic-area;
     @include font($space-mono, 48px, 700, 48px);

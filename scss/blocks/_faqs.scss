@@ -76,14 +76,31 @@
       width: 16px;
       height: 8px;
       border: none;
-      background-image: url(../../img/icons/arrow-bottom.svg);
+      background-image: url(../../img/faqs-icon.svg);
       background-color: transparent;
       position: absolute;
       top: 42px;
       right: 42px;
       cursor: pointer;
     }
+    &-button-active {
+      // @include basic-area;
+      // @include basic-bg-img;
+      // width: 16px;
+      // height: 8px;
+      // border: none;
+      // background-image: url(../../img/faqs-icon.svg);
+      // background-color: transparent;
+      // position: absolute;
+      // top: 42px;
+      // right: 42px;
+      // cursor: pointer;
+
+      &--opening {
+        background-image: url(../../img/faqs-icon_top.svg);
+    }
   }
+}
 }
 
 @media only screen and (max-width: $tablet) {

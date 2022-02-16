@@ -636,7 +636,7 @@ a {
 
 @media only screen and (max-width: 729px) {
   .about-intro {
-    background-image: url(../../img/mobile-bcg.jpg);
+    background-image: url(../../img/mobile-bg.jpg);
   }
   .about-intro__container {
     padding: 72px 32px;
@@ -808,6 +808,7 @@ a {
 }
 
 .benefits {
+  margin-top: 120px;
   overflow: hidden;
 }
 
@@ -882,11 +883,6 @@ a {
   margin-bottom: 0;
 }
 
-.benefits__list__item-picture {
-  width: 445px;
-  height: 445px;
-}
-
 .benefits__list-item:nth-child(2n) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -929,8 +925,33 @@ a {
   color: #939CAA;
 }
 
-.benefits__item-picture {
+.benefits__item-descriptions {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 40px;
+  color: #939CAA;
+}
+
+.benefits__item-img {
+  width: 240px;
+  height: 240px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 50%;
+}
+
+.benefits__item-picture {
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+}
+
+.benefits__list-item--left {
+  margin-top: 77px;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -1023,6 +1044,10 @@ a {
     top: 0;
     left: 130px;
   }
+}
+
+.our-values {
+  margin-top: 78px;
 }
 
 .our-values__title {
@@ -1169,7 +1194,7 @@ a {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .cta__container {
-    background-image: url("../../img/cta-bg2x@2x.jpg");
+    background-image: url("../../img/cta-bg2x.jpg");
   }
 }
 
@@ -1229,11 +1254,11 @@ a {
     margin-top: 40px;
   }
   .cta__app-store {
-    width: 114px;
-    height: 38px;
+    width: 113px;
+    height: 40px;
   }
   .cta__google-play {
-    width: 128px;
+    width: 130px;
     height: 40px;
   }
 }
@@ -1467,12 +1492,16 @@ a {
   width: 16px;
   height: 8px;
   border: none;
-  background-image: url(../../img/icons/arrow-bottom.svg);
+  background-image: url(../../img/faqs-icon.svg);
   background-color: transparent;
   position: absolute;
   top: 42px;
   right: 42px;
   cursor: pointer;
+}
+
+.faqs__item-button-active--opening {
+  background-image: url(../../img/faqs-icon_top.svg);
 }
 
 @media only screen and (max-width: 1150px) {

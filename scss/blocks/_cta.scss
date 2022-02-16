@@ -10,7 +10,7 @@
     only screen and (min-device-pixel-ratio: 2),
     only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx) {
-    background-image: url("../../img/cta-bg2x@2x.jpg");
+    background-image: url("../../img/cta-bg2x.jpg");
     }
 
     background-image: url(../../img/cta-bg.jpg);background-repeat: no-repeat;
@@ -61,11 +61,11 @@
       margin-top: 40px;
     }
     &__app-store {
-      width: 114px;
-      height: 38px;
+      width: 113px;
+      height: 40px;
     }
     &__google-play {
-      width: 128px;
+      width: 130px;
       height: 40px;
     }
   }
