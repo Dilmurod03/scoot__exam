@@ -245,6 +245,12 @@ a {
   .header__container {
     max-width: 728px;
   }
+  .header__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 729px) {
@@ -279,9 +285,13 @@ a {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: calc(100vh - 64px);
     width: 100%;
     background-color: rgba(47, 59, 89, 0.75);
@@ -300,6 +310,7 @@ a {
     background-color: #333A44;
     -webkit-animation: toggle-navbar 1.5s ease;
             animation: toggle-navbar 1.5s ease;
+    z-index: -1;
   }
   .header__nav--opened .header__nav-list {
     margin: 0;
@@ -335,8 +346,8 @@ a {
     color: #FCB72B;
   }
   .header__nav--closing {
-    -webkit-animation: header-closing .5s linear;
-            animation: header-closing .5s linear;
+    -webkit-animation: header-closing 0.5s linear;
+            animation: header-closing 0.5s linear;
   }
   .header__burger {
     display: -webkit-box;
@@ -405,6 +416,9 @@ a {
   .nav__item-link {
     font-size: 18px;
     color: #E5ECF4;
+  }
+  .nav__item-link--active {
+    color: #FCB72B;
   }
 }
 
@@ -579,9 +593,6 @@ a {
 }
 
 @media only screen and (max-width: 729px) {
-  .intro--opened {
-    max-height: 603px;
-  }
   .intro__container {
     max-width: 351px;
     text-align: center;
@@ -779,7 +790,7 @@ a {
 
 @media only screen and (max-width: 729px) {
   .proccess__container {
-    max-width: 688px;
+    max-width: 350px;
     padding: 120px 20px;
   }
   .proccess__list-item {
@@ -1044,10 +1055,6 @@ a {
     top: 0;
     left: 130px;
   }
-}
-
-.our-values {
-  margin-top: 78px;
 }
 
 .our-values__title {

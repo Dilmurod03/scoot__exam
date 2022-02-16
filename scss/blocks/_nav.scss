@@ -30,6 +30,9 @@
     &__item-link {
       font-size: 18px;
       color: $header__link--mobile-color;
+      &--active {
+        color: $button-color;
+      }
     }
   }
 }

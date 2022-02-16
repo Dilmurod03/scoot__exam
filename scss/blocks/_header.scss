@@ -118,6 +118,9 @@
   .header__container {
     max-width: 728px;
   }
+  .header__nav {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: $mobile) {
@@ -141,10 +144,11 @@
         @include flex-display;
         @include basic-area;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
         height: calc(100vh - 64px);
         width: 100%;
-        background-color: rgba(47, 59, 89, .75);
+        background-color: rgba(47, 59, 89, 0.75);
         position: absolute;
         top: 100%;
         left: 0;
@@ -159,7 +163,7 @@
           left: 0;
           background-color: $toggle__navbar-bg;
           animation: toggle-navbar 1.5s ease;
-
+          z-index: -1;
         }
 
         & .header__nav-list {
@@ -180,20 +184,19 @@
           }
         }
 
-
         & .header__link--active {
           color: $main__button-bg;
         }
       }
       &--closing {
-        animation: header-closing .5s linear;
+        animation: header-closing 0.5s linear;
       }
     }
-      &__burger {
-        @include flex-display;
-        flex-wrap: wrap;
-      }
-      
+    &__burger {
+      @include flex-display;
+      flex-wrap: wrap;
+    }
+
     &__link {
       display: none;
       height: 53;
